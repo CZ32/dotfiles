@@ -10,7 +10,7 @@
     ~/.gitconfig: .gitconfig
     ~/.oh-my-zsh-config.sh: .oh-my-zsh-config.sh
     ~/.ssh/config: .ssh_config
-    ~/install_dev_env: install_dev_env
+    ~/install_linux_dev_env: install_linux_dev_env
 
 - create:
     - ~/downloads
