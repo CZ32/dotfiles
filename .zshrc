@@ -1,3 +1,7 @@
+## LOGIN
+# Start SSH agent
+eval "$(ssh-agent -s)"
+
 ## SCRIPTS
 source ./.oh-my-zsh-config.sh
 source ./.custom_commands.sh
