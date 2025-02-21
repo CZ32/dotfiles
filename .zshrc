@@ -1,6 +1,4 @@
 ## LOGIN
-# Start SSH agent
-# Start SSH agent if not already running
 # Start SSH agent if not already running
 if [ -z "$SSH_AUTH_SOCK" ]; then
     if [ -r ~/.ssh-agent ]; then
