@@ -1,0 +1,19 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshrc: .zshrc
+    ~/.customer_commands.sh: .custom_commands.sh
+    ~/.gitignore: .gitignore
+    ~/.gitconfig: .gitconfig
+    ~/.oh-my-zsh-config.sh: .oh-my-zsh-config.sh
+
+- create:
+    - ~/downloads
+    - ~/.vim/undo-history
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
