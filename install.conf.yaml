@@ -6,7 +6,6 @@
 
 - link:
     ~/.zshrc: .zshrc
-    ~/.custom_commands.sh: .custom_commands.sh
     ~/.gitignore: .gitignore
     ~/.gitconfig: .gitconfig
     ~/.oh-my-zsh-config.sh: .oh-my-zsh-config.sh
