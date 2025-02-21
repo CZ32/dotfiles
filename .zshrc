@@ -4,9 +4,6 @@ source ./.custom_commands.sh
 
 ## PATHS
 export PROJECTS_HOME=${HOME}/projects
-export PATH=/opt/homebrew/bin:$PATH
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
 # There are many other ways to customize your shell:
 # - Set variables
