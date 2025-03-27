@@ -6,11 +6,12 @@
 
 - link:
     ~/.zshrc: .zshrc
-    ~/.gitignore: .gitignore
-    ~/.gitconfig: .gitconfig
+    ~/.zshrc_work: .zshrc
+    # ~/.gitignore: .gitignore # Disabled to not overwrite work config
+    # ~/.gitconfig: .gitconfig # Disabled to not overwrite work config
     ~/.oh-my-zsh-config.sh: .oh-my-zsh-config.sh
-    ~/.ssh/config: .ssh_config
-    ~/install_linux_dev_env: install_linux_dev_env
+    # ~/.ssh/config: .ssh_config # Disabled to not overwrite work config
+    # ~/install_linux_dev_env: install_linux_dev_env # Disabled to not overwrite work config
 
 - create:
     - ~/downloads

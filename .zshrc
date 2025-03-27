@@ -29,8 +29,8 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
 fi
 
 ## SCRIPTS
+source ./.zshrc_work
 source ./.oh-my-zsh-config.sh
-source ./.custom_commands.sh
 
 # There are many other ways to customize your shell:
 # - Set variables
