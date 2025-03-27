@@ -1,5 +1,21 @@
-## LOGIN
-# Start SSH agent if not already running
+## PATHS
+export PROJECTS_HOME=${HOME}/projects
+export PATH=/opt/homebrew/bin:$PATH
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# assuming that rbenv was installed to `~/.rbenv`
+FPATH=~/.rbenv/completions:"$FPATH"
+
+autoload -U compinit
+compinit
+
+# Initalize services
+## Start rbenv
+eval "$(rbenv init -)"
+### Start SSH agent if not already running
 if [ -z "$SSH_AUTH_SOCK" ]; then
     if [ -r ~/.ssh-agent ]; then
         eval "$(<~/.ssh-agent)" >/dev/null
@@ -12,21 +28,9 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
     fi
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-eval "$(rbenv init -)"
-
 ## SCRIPTS
 source ./.oh-my-zsh-config.sh
 source ./.custom_commands.sh
-
-## PATHS
-export PROJECTS_HOME=${HOME}/projects
-export PATH=/opt/homebrew/bin:$PATH
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # There are many other ways to customize your shell:
 # - Set variables
