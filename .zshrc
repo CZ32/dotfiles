@@ -15,18 +15,19 @@ compinit
 # Initalize services
 ## Start rbenv
 eval "$(rbenv init -)"
-### Start SSH agent if not already running
-if [ -z "$SSH_AUTH_SOCK" ]; then
-    if [ -r ~/.ssh-agent ]; then
-        eval "$(<~/.ssh-agent)" >/dev/null
-    fi
 
-    if [ ! -S "$SSH_AUTH_SOCK" ]; then
-        (umask 077; ssh-agent > ~/.ssh-agent)
-        eval "$(<~/.ssh-agent)" >/dev/null
-        ssh-add ~/.ssh/id_ed25519
-    fi
-fi
+### Start SSH agent if not already running
+# if [ -z "$SSH_AUTH_SOCK" ]; then
+#     if [ -r ~/.ssh-agent ]; then
+#         eval "$(<~/.ssh-agent)" >/dev/null
+#     fi
+
+#     if [ ! -S "$SSH_AUTH_SOCK" ]; then
+#         (umask 077; ssh-agent > ~/.ssh-agent)
+#         eval "$(<~/.ssh-agent)" >/dev/null
+#         ssh-add ~/.ssh/id_ed25519
+#     fi
+# fi
 
 ## SCRIPTS
 source ./.zshrc_work

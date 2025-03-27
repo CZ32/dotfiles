@@ -6,7 +6,7 @@
 
 - link:
     ~/.zshrc: .zshrc
-    ~/.zshrc_work: .zshrc
+    ~/.zshrc_work: .zshrc_work
     # ~/.gitignore: .gitignore # Disabled to not overwrite work config
     # ~/.gitconfig: .gitconfig # Disabled to not overwrite work config
     ~/.oh-my-zsh-config.sh: .oh-my-zsh-config.sh
