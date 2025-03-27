@@ -7,6 +7,11 @@
 - link:
     ~/.zshrc: .zshrc
     ~/.zshrc_work: .zshrc_work
+    ~/.config/nvim:
+        create: true
+        force: true
+        relink: true
+        path: lazyvim
     # ~/.gitignore: .gitignore # Disabled to not overwrite work config
     # ~/.gitconfig: .gitconfig # Disabled to not overwrite work config
     ~/.oh-my-zsh-config.sh: .oh-my-zsh-config.sh
@@ -16,6 +21,5 @@
 - create:
     - ~/downloads
     - ~/.vim/undo-history
-
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
