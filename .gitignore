@@ -1,3 +1,4 @@
 .env
 .env*
 .zshrc_work
+lazyvim/lazy-lock.json
