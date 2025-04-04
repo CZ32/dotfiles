@@ -12,7 +12,14 @@ return {
   config = function()
     require("telescope").setup({
       -- Your Telescope configuration here (if any)
+      defaults = {
+        layout_config = {
+          prompt_position = "top",
+        },
+        file_sorter = require("telescope.sorters").get_fzy_sorter,
+      },
     })
     require("telescope").load_extension("fzf")
+    vim.keymap.set("n", "<leader>fg", "<cmd>Telescope find_files<cr>", { desc = "Find files using Telescope" })
   end,
 }
