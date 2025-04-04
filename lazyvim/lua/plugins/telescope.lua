@@ -1,6 +1,7 @@
 return {
   "nvim-telescope/telescope.nvim",
   tag = "0.1.8",
+  lazy = false,
   dependencies = {
     "nvim-lua/plenary.nvim",
     {
@@ -8,4 +9,10 @@ return {
       build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
     },
   },
+  config = function()
+    require("telescope").setup({
+      -- Your Telescope configuration here (if any)
+    })
+    require("telescope").load_extension("fzf")
+  end,
 }
