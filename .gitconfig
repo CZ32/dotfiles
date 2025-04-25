@@ -1,11 +1,29 @@
 [user]
-        email = 66175507+CZ32@users.noreply.github.com
-        name = Cengizhan Ziyaeddin
+  email = 66175507+CZ32@users.noreply.github.com
+  name = Cengizhan Ziyaeddin
+[branch]
+  sort = -committerdate
+[color]
+  ui = auto
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  ls = ls-files
+  wc = whatchanged
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  last = log -n 1 HEAD
+  wdiff = diff --word-diff
+  unstage = reset HEAD --
+  contributors = shortlog -s -n
+  praise = blame
 [core]
 	page = diff-so-fancy
 	pager = diff-so-fancy | less --tabs=4 -RF
-[color]
-	ui = true
+  excludesfile = /Users/$WHO_AM_I/.global_ignore
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
@@ -18,4 +36,33 @@
 	commit = yellow bold
 	old = red bold
 	new = green bold
-	whitespace = red reverse
+	whitespace = red reverse 
+[column]
+  ui = auto
+[diff]
+  wsErrorHighlight = all
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+[diff "gpg"]
+  textconv = gpg --quiet --no-tty --decrypt
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+[tag]
+  sort = version:refname
+[init]
+  defaultBranch = main
+[push]
+  default = current
+[pull]
+  rebase = false
+# [gpg]
+#   format = ssh
+# [gpg "ssh"]
+#   allowedSignersFile = /Users/$WHO_AM_I/.ssh/allowed_signers
+# [commit]
+#   gpgSign = true
+
