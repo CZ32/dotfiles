@@ -30,8 +30,8 @@ eval "$(rbenv init -)"
 # fi
 
 ## SCRIPTS
-source ./.zshrc_work
-source ./.oh-my-zsh-config.sh
+source $HOME/.zshrc_work
+source $HOME/.oh-my-zsh-config.sh
 
 # There are many other ways to customize your shell:
 # - Set variables
@@ -45,3 +45,14 @@ source ./.oh-my-zsh-config.sh
 # - Use ZSH plugins
 # - Change key bindings
 # - Add "zstyles" for completions & more
+
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+
+# bun completions
+[ -s "/Users/cengiz.ziyaeddin/.bun/_bun" ] && source "/Users/cengiz.ziyaeddin/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
