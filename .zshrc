@@ -44,4 +44,13 @@ source ./.oh-my-zsh-config.sh
 # - Add locations to $PATH variable (or $path array)
 # - Use ZSH plugins
 # - Change key bindings
-# - Add "zstyles" for completions & more
+# - Add "zstyles" for completions & moreexport PATH="/opt/homebrew/sbin:$PATH"
+export PACT_DO_NOT_TRACK=true
+export HOMEBREW_NO_AUTO_UPDATE=1
+export PROJECTS_HOME=${HOME}/projects
+export PATH="/opt/homebrew/sbin:$PATH"
+export HOMEBREW_NO_AUTO_UPDATE=1
+export PROJECTS_HOME=${HOME}/projects
+export PATH="/opt/homebrew/sbin:$PATH"
+export HOMEBREW_NO_AUTO_UPDATE=1
+export PROJECTS_HOME=${HOME}/projects
