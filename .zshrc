@@ -47,10 +47,10 @@ source ./.oh-my-zsh-config.sh
 # - Add "zstyles" for completions & moreexport PATH="/opt/homebrew/sbin:$PATH"
 export PACT_DO_NOT_TRACK=true
 export HOMEBREW_NO_AUTO_UPDATE=1
-export PROJECTS_HOME=${HOME}/projects
 export PATH="/opt/homebrew/sbin:$PATH"
-export HOMEBREW_NO_AUTO_UPDATE=1
-export PROJECTS_HOME=${HOME}/projects
-export PATH="/opt/homebrew/sbin:$PATH"
-export HOMEBREW_NO_AUTO_UPDATE=1
-export PROJECTS_HOME=${HOME}/projects
+export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin/:$PATH"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/cengiz.ziyaeddin/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
