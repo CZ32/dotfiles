@@ -26,3 +26,4 @@
     - ~/.vim/undo-history
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [echo "Installation complete! Run 'exec zsh' to reload your shell configuration or restart your terminal", Reminder to reload shell]
