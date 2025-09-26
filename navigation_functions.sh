@@ -1,5 +1,4 @@
 cdp() {
-    echo "Foo"
     if [ -z "$PROJECTS_HOME" ]; then
         echo "Error: PROJECT_HOME environment variable is not set"
         echo "Please set PROJECT_HOME in your shell configuration, e.g.:"
