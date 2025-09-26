@@ -30,8 +30,9 @@ eval "$(rbenv init -)"
 # fi
 
 ## SCRIPTS
-source ./.zshrc_work
-source ./.oh-my-zsh-config.sh
+source ~/.zshrc_work
+source ~/.oh-my-zsh-config.sh
+source ~/navigation_functions.sh
 
 # There are many other ways to customize your shell:
 # - Set variables

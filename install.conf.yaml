@@ -12,13 +12,13 @@
         force: true
         relink: true
         path: lazyvim
-    # ~/.gitignore: .gitignore # Disabled to not overwrite work config
-    # ~/.gitconfig: .gitconfig # Disabled to not overwrite work config
     ~/.oh-my-zsh-config.sh: .oh-my-zsh-config.sh
     ~/.oh-my-zsh: .oh-my-zsh
-    ~/.gitconfig: .gitconfig
-    ~/.gitignore: .gitignore
-    # ~/.ssh/config: .ssh_config # Disabled to not overwrite work config
+    ~/navigation_functions.sh: navigation_functions.sh
+    ~/terminal-settings-for-vscode.json: terminal-settings-for-vscode.json
+    ~/.gitconfig: .gitconfig # Disabled to not overwrite work config
+    #### Personal Machine Configuration ####
+    # ~/.gitignore: .gitignore # Disabled to not overwrite work config
     # ~/install_linux_dev_env: install_linux_dev_env # Disabled to not overwrite work config
 
 - create:
@@ -26,3 +26,4 @@
     - ~/.vim/undo-history
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [echo "Installation complete! Run 'exec zsh' to reload your shell configuration or restart your terminal", Reminder to reload shell]
