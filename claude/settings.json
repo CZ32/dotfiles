@@ -3,8 +3,9 @@
     "ruby-lsp@claude-plugins-official": true,
     "skill-creator@claude-plugins-official": true,
     "plugin-dev@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true
+    "typescript-lsp@claude-plugins-official": true,
+    "mattpocock-skills@claude-plugins-official": true
   },
-  "theme": "dark",
-  "outputStyle": "Plain Technical English"
+  "outputStyle": "Plain Technical English",
+  "theme": "dark"
 }
