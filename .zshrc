@@ -55,3 +55,15 @@ fpath=(/Users/cengiz.ziyaeddin/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+alias lg="lazygit"
+alias gcnv="git commit --no-verify -m"
+
+# bun completions
+[ -s "/Users/cengiz.ziyaeddin/.bun/_bun" ] && source "/Users/cengiz.ziyaeddin/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+alias sem=/usr/local/bin/sem
