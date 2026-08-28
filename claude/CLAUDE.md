@@ -54,6 +54,10 @@ whether to attribute commits to Claude.
 Note: ~/.dotfiles/.gitmessage already holds a commit template.
 -->
 
+- Always break down work into small commitable chunks
+- Always ask before you commit, do not commit without my permission.
+- Never amend commits unless specifically asked to.
+
 ## Project defaults
 
 <!--
