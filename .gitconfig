@@ -51,7 +51,7 @@
 [diff "bnwsec"]
   textconv = bnw_secrets get --detect-profile --no-error
 [core]
-  excludesfile = /Users/cengiz.ziyaeddin/.global_ignore
+	excludesfile = /Users/cengiz.ziyaeddin/.gitignore
 [push]
   default = current
 [pull]
