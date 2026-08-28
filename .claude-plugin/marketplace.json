@@ -1,0 +1,14 @@
+{
+  "name": "cz-marketplace",
+  "owner": {
+    "name": "Cengiz Ziyaeddin"
+  },
+  "description": "Cengiz's personal Claude Code plugins, kept in the dotfiles repository.",
+  "plugins": [
+    {
+      "name": "cz-skills",
+      "source": "./plugins/cz-skills/",
+      "description": "Personal skills kept in the dotfiles repository."
+    }
+  ]
+}
