@@ -6,6 +6,7 @@
 
 - link:
     ~/.zshrc: .zshrc
+    ~/.pryrc: .pryrc
     ~/Brewfile: Brewfile
     ~/.config/nvim:
         create: true
