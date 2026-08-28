@@ -18,6 +18,14 @@
     ~/navigation_functions.sh: navigation_functions.sh
     ~/terminal-settings-for-vscode.json: terminal-settings-for-vscode.json
     ~/.gitconfig: .gitconfig # Disabled to not overwrite work config
+    #### Claude Code ####
+    ~/.claude/settings.json:
+        force: true
+        path: claude/settings.json
+    ~/.claude/output-styles/plain-technical-english.md:
+        create: true
+        force: true
+        path: claude/output-styles/plain-technical-english.md
     #### Personal Machine Configuration ####
     # ~/.gitignore: .gitignore # Disabled to not overwrite work config
     # ~/install_linux_dev_env: install_linux_dev_env # Disabled to not overwrite work config
