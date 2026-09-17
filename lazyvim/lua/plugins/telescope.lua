@@ -19,6 +19,11 @@ return {
       },
     })
     require("telescope").load_extension("fzf")
-    vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files using Telescope" })
+    vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "Find files using Telescope" })
+    vim.keymap.set("n", "<leader>et", function()
+      require("telescope.builtin").find_files({
+        cwd = vim.fn.stdpath("plugins"),
+      })
+    end)
   end,
 }
